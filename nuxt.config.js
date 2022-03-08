@@ -38,7 +38,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxt/image',
-    
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -55,5 +55,9 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  storyblok: {
+    accessToken: process.env.STORYBLOK_API_KEY,
+    cacheProvider: "memory"
+  },
 }
